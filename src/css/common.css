@@ -16,3 +16,93 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* Color Switcher */
+.container-color-switcher {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  font-size: 16px;
+  padding: 8px 32px;
+  border-radius: 8px;
+  border: 1px solid rgba(200, 200, 200, 0.95);
+  color: #444;
+  text-transform: uppercase;
+  height: 40px;
+}
+
+button:disabled {
+  color: #ddd;
+  opacity: 0.5;
+  border-color: rgba(200, 200, 200, 0.75);
+}
+
+/* Timer */
+.timer {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0px;
+}
+
+#datetime-picker {
+  height: 40px;
+  width: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: 16px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid rgba(200, 200, 200, 0.95);
+}
+
+#datetime-picker+button {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+}
+
+.timer {
+  margin-left: 16px;
+}
+
+.value {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Promise generator */
+
+input {
+  height: 40px;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: 16px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid rgba(200, 200, 200, 0.95);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 360px;
+}
+
+.form>label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.form>button {
+  background-color: #1e90ff;
+  color: #fff;
+}
