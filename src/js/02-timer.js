@@ -51,7 +51,7 @@ function readoutHandler(evt) {
                 evt.target.textContent = "Start";
                 evt.target.style.backgroundColor = "#1e90ff"
             }
-            console.log('ms = ', Math.floor(ms / 1000));
+            console.log('ms = ', Math.floor(ms / 1000)+1);
             elements.days.textContent = addLeadingZero(convertMs(ms).days);
             elements.hours.textContent = addLeadingZero(convertMs(ms).hours);
             elements.minutes.textContent = addLeadingZero(convertMs(ms).minutes);
